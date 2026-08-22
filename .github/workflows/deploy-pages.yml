@@ -24,13 +24,30 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.13'
+          python-version: "3.13"
 
       - name: Install MyST
         run: python -m pip install --upgrade pip mystmd
 
       - name: Build site
         run: myst build --html
+
+      - name: Fix GitHub Pages asset paths
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          root = Path('_build/html')
+          prefix = '/Course-Manual-System'
+          for html in root.rglob('*.html'):
+              text = html.read_text(encoding='utf-8')
+              text = text.replace('href="/', f'href="{prefix}/')
+              text = text.replace('src="/', f'src="{prefix}/')
+              text = text.replace('content="/', f'content="{prefix}/')
+              text = text.replace('url("/', f'url("{prefix}/')
+              text = text.replace("href='/", f"href='{prefix}/")
+              text = text.replace("src='/", f"src='{prefix}/")
+              html.write_text(text, encoding='utf-8')
+          PY
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
