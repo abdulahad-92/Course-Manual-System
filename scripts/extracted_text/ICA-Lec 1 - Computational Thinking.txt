@@ -1,0 +1,542 @@
+Introduction to Computer Applications 
+(MIS 103)
+Lecture 1: Computational Thinking 
+
+Lecture 1 : Computational Thinking
+Lecture 1: Introduction to Computational Thinking
+2
+
+What is Computational Thinking ?
+• Computers being used in almost every field of life today
+• Some pre-requisites for controlling ( increasing efficiency of) computers:
+• Understanding of “ how it works?”
+• Making human-computer interaction as efficient as possible
+“This process of efficient and effective computer use is known as computer like 
+thinking or Computational Thinking [1]
+Lecture 1: Introduction to Computational Thinking
+3
+
+Varying Definitions in Literature 
+Lecture 1: Introduction to Computational Thinking
+4
+
+Varying Definitions in Literature (cont’d)
+Lecture 1: Introduction to Computational Thinking
+5
+
+What is common?  “ Computational Thinking”
+• A thought process related to structured problem solving 
+• It involves :
+• Problem understanding and formulation 
+• Formulating / designing the solution [ in terms a computer can process and solve]
+• Also called “ Algorithmic Thinking” in 1950s and 1960s [ Denning, 2009]
+• Involves converting inputs to outputs after some processing through algorithms
+• Uses tool and techniques from computer science field
+• Considerations:
+• Many levels of abstractions 
+• Use of mathematics to develop algorithms 
+• How well a solution scales across different sizes of the problems
+Lecture 1: Introduction to Computational Thinking
+6
+
+Components of Computational Thinking 
+Lecture 1: Introduction to Computational Thinking
+7
+Computational thinking abilities are essentially the set of skills needed to convert 
+complex, messy, partially defined, real-world problems into a form that a mindless 
+computer can tackle without further assistance from a human (BCS, 2014, p.3). 
+
+1. Abstraction
+• Focusing on the necessary details only while ignoring the unnecessary ones
+• Examples 
+• Your father asks you for a glass of water 
+• Where the focus is?
+• What is abstracted?
+• Your instructor ask you to draw five balls and five stars and separate them with a 
+decision boundary 
+• Where the focus is?
+• What is abstracted ?
+• You can send an email by pressing send button. 
+• Where the focus is?
+• What is abstracted?
+Lecture 1: Introduction to Computational Thinking
+8
+
+Abstraction Examples ( Google Translate)
+Lecture 1: Introduction to Computational Thinking
+9
+
+Abstraction Examples ( Google Map)
+Lecture 1: Introduction to Computational Thinking
+10
+
+What is hidden?
+Google Translate?
+•?
+•?
+•?
+•?
+Google Maps?
+•?
+•?
+•?
+•?
+Lecture 1: Introduction to Computational Thinking
+11
+
+2. Problem Decomposition 
+• Problem Decomposition is a method for taking a problem and breaking it into smaller and more 
+understandable constituents.
+• This method is also known as “Divide and Conquer” 
+Lecture 1: Introduction to Computational Thinking
+12
+
+Problem Decomposition-Divide and Conquer
+( Merge Sort)
+Lecture 1: Introduction to Computational Thinking
+13
+
+Problem Decomposition ( Input – Processing – Output)
+• Writing a computer program to compute the average daily temperatures of 
+the previous 3 weeks and display it graphically.
+• Decompose the problem 
+• Input
+• Processing
+• Output
+Lecture 1: Introduction to Computational Thinking
+14
+
+Problem Decomposition -Work Breakdown Structure
+• A Work Breakdown Structure (WBS) is a project management tool that helps 
+break down complex projects into smaller, more manageable components.
+• It essentially acts like a roadmap for your project, showing the overall scope 
+and identifying all the tasks needed to complete it successfully.
+Lecture 1: Introduction to Computational Thinking
+15
+
+WBS
+Lecture 1: Introduction to Computational Thinking
+16
+
+Write a Haiku
+To be concise, poetic and to the point in 3 lines and 17 syllables. There is a 
+beauty in constraints.
+http://writeahaiku.com
+Decomposition – Example 1
+
+Haiku rules
+• Three lines.
+• Five syllables in the first and third lines.
+• Seven syllables in the second line.
+• Lines don't rhyme.
+• Includes a kireji or cutting word. ( but , so , yet , then, or etc.)
+• Includes a kigo, a seasonal reference. ( cool , warmth, flowering, fallen leaves 
+etc )
+Lecture 1: Introduction to Computational Thinking
+18
+
+Haiku - Rules
+rain pitter patters
+so very quiet and sad
+so warm and calming
+beautiful flowers
+take care of them and they grow
+neglect them, they die
+Lecture 1: Introduction to Computational Thinking
+19
+
+Decomposition : Examples 2 - Write a speech
+Tell them what you are going to tell them.
+Tell them.
+Tell them what you have told them.
+
+3. Algorithm Design 
+• An algorithm is a step-by-step procedure for solving a problem.
+• Guidelines
+• Correctness: The algorithm must be correct, meaning that it must produce the correct output for all 
+possible inputs.
+• Efficiency: The algorithm should be efficient, meaning that it should solve the problem in a reasonable 
+amount of time and space.
+• Generality: The algorithm should be general, meaning that it should be able to solve a wide variety of 
+problems.
+• Simplicity: The algorithm should be simple, meaning that it should be easy to understand and 
+implement.
+• Robustness: The algorithm should be robust, meaning that it should be able to handle unexpected 
+inputs and errors.
+Lecture 1: Introduction to Computational 
+Thinking
+21
+
+Algorithm Design 
+Lecture 1: Introduction to Computational 
+Thinking
+22
+
+Searching
+• How will you search an element in an unordered list 
+• Searching an email address in a list of 50 with out any index 
+• How will you search an element in an ordered or sorted list 
+• Searching a name in telephone directory and then the phone number
+• Searching a word in a dictionary
+• Considerations:
+• Efficiency in terms of execution time 
+• Complexity of the algorithm
+Lecture 1: Introduction to Computational Thinking
+23
+
+Linear Search 
+Lecture 1: Introduction to Computational 
+Thinking
+24
+
+Binary Search 
+Lecture 1: Introduction to Computational 
+Thinking
+25
+
+Binary Search – Algorithm 
+Lecture 1: Introduction to Computational Thinking
+26
+
+4. Pattern Recognition 
+• Ability to identify and understand similarities and relationships within data 
+or concepts.
+Lecture 1: Introduction to Computational Thinking
+27
+
+Pattern Recognition - Examples
+Lecture 1: Introduction to Computational Thinking
+28
+
+Pattern Recognition – Examples
+Lecture 1: Introduction to Computational 
+Thinking
+29
+
+Pattern Recognition 
+• It is the ability to identify patterns in historical data and use those patterns to 
+solve future problems.
+• Pattern recognition can be used to solve a wide variety of problems, 
+including:
+• Identifying objects in images
+• Classifying text
+• Predicting future events
+• Detecting fraud
+• Making medical diagnoses
+Lecture 1: Introduction to Computational Thinking
+30
+
+Pattern Recognition – Traffic Patterns 
+DHA to IBA
+• At 6 am
+• At 8 am
+• At  6 pm
+• At 9 pm
+• On a weekend
+Lecture 1: Introduction to Computational Thinking
+31
+
+5. Generalization
+• Generalization is the process of adapting formulated solutions or algorithms 
+into different problem states, even if the variables involved are different. 
+• Example
+• You are required to write a program that sorts a list of numbers 
+• Suppose you write a program to sort numbers ( integers) in ascending order 
+• Limitations:
+• Can’t work with float values
+• Can’t sort in descending order 
+• May have limit in size of the list provided
+• A general solution can be to design an algorithm that can:
+• Work with both integers and floats
+• Gives the user the flexibility to sort in any order
+• Can work with any size of list
+Lecture 1: Introduction to Computational 
+Thinking
+32
+
+What does it take to get things done?
+Solving problems
+An objective. 
+An end goal
+Abstraction
+Constraints, 
+limitations and 
+restrictions
+Decomposition
+A history of solving similar problems? 
+Algorithm 
+Design
+Pattern 
+Recognition 
+Generalization 
+Lecture 1: Introduction to Computational Thinking
+33
+
+What does it take to get things done?
+Frameworks
+• Input. Output. 
+Process
+• Smaller sub 
+problems. Divide 
+and conquer. 
+• Work break down 
+structure. Task 
+lists
+Process
+• Abstraction
+• Pattern 
+recognition
+• Decomposition
+• Design
+• Generalization 
+Deliverables
+• Efficiency
+• Environment
+• Constraints
+• Deployment
+Lecture 1: Introduction to Computational Thinking
+34
+
+Assessments 
+Lecture 1: Introduction to Computational 
+Thinking
+35
+
+How to get A Grade in a course 
+• Problem : How to get A grade in a Course 
+• Abstraction 
+• Decomposition 
+• Algorithm Design 
+• Pattern Recognition 
+• Generalization
+Lecture 1: Introduction to Computational Thinking
+36
+
+How does ChatGPT Work? 
+Lecture 1: Introduction to Computational Thinking
+37
+
+ChatGPT : How it works?
+• Suppose , someone writes this prompt 
+•“The best thing about AI is its ability to”
+Lecture 1: Introduction to Computational Thinking
+38
+
+ChatGPT : How it works
+• ChatGPT is always fundamentally trying to do is to produce a “reasonable continuation” of 
+whatever text it’s got so far.
+• By “reasonable” we mean “what one might expect someone to write after seeing what people 
+have written on billions of webpages, etc.”
+• Imagine scanning billions of pages of human-written text (say on the web and in digitized books) 
+and finding all instances of this text, it produces a ranked list of words that might follow, together 
+with “probabilities”:
+Lecture 1: Introduction to Computational 
+Thinking
+39
+
+ChatGPT : How it works
+• At each step it gets a list of words with probabilities.
+• One might think the next word should be the “highest-ranked”
+• If we always pick the highest-ranked word, we’ll typically get a very “flat” essay, that 
+never seems to “show any creativity”
+• But if sometimes (at random) we pick lower-ranked words, we get a “more 
+interesting” essay.
+• Not using the highest ranked word helps in creating randomness
+• Temperature Parameter 
+• Decides how often a lower-ranked word will be used 
+• Values close to 0 generate more exact response with less randomness
+• Values close to 1 tend to generate something novice
+Lecture 1: Introduction to Computational 
+Thinking
+40
+
+ChatGPT : How it works
+Lecture 1: Introduction to Computational Thinking
+41
+
+ChatGPT: How it works?
+Lecture 1: Introduction to Computational Thinking
+42
+
+ChatGPT: How it Works?
+Lecture 1: Introduction to Computational Thinking
+43
+
+ChatGPT: How it Works?
+Lecture 1: Introduction to Computational Thinking
+44
+
+ChatGPT: How it Works?
+Lecture 1: Introduction to Computational Thinking
+45
+
+ChatGPT: How it Works?
+Lecture 1: Introduction to Computational Thinking
+46
+
+Visual Thinking
+
+Contents
+• What is Visual Thinking?
+• Visual Thinking Tools
+• Mind Maps
+• Control Flow Charts 
+• Process Flow Diagrams
+• Swim Lanes
+Lecture 2:Visual Thinking
+48
+
+Visual Thinking 
+• Visual thinking is a thought process that organizes ideas visually and focuses 
+on graphic representation instead of a verbal representation of information or 
+problem. 
+• Visual thinking helps in:
+• Stimulate problem-solving
+• Break down complex structures of information
+• Create strong associations between pieces of information
+• Explore innovative ideas
+• Organize ideas graphically
+Lecture 2:Visual Thinking
+49
+
+Visual Thinking
+• The following tools and techniques can be used:
+• Mind Maps
+• Process Flow Diagrams
+• Flow Charts
+• Visual Programming
+• Swim Lanes
+• State Diagrams 
+• Transition Tables 
+• UML Diagrams 
+Lecture 2:Visual Thinking
+50
+
+What is Mind Mapping?
+“A visual thought process that 
+assists you to identify a central 
+idea, brainstorm a cloud of related 
+ideas, and creatively think about 
+specific dimensions of the main 
+idea to help you see that you are 
+considering all of its benefits or 
+solution strategies”
+Lecture 2:Visual Thinking
+51
+
+Mind Map – Key Element
+• Here are some of the key elements of a mind map:
+• A central image or concept.
+• Branches that radiate from the central image, representing related ideas.
+• Sub-branches that radiate from the branches, representing more specific ideas.
+• Images, words, and colors can be used to represent ideas.
+• Symbols can be used to represent relationships between ideas.
+Lecture 2:Visual Thinking
+52
+
+Exploring ChatGPT using a Mind Map 
+Lecture 2:Visual Thinking
+53
+
+TO DO : Create a mind map for Google Bard? 
+Lecture 2:Visual Thinking
+54
+
+Control Flow Diagrams
+Lecture 2:Visual Thinking
+55
+
+What is a control flow diagram ?
+• A control flow diagram (CFD) is a graphical representation that shows the 
+complete flow of execution of a computer program or algorithm. 
+• It shows:
+• The inputs
+• Processing paths based on different logical conditions 
+• The Output
+• It contains:
+• Nodes: Nodes represent points in the program where control can be transferred.
+• Arrows: Arrows represent the flow of control between nodes.
+• Decision nodes: Decision nodes represent points in the program where a decision 
+needs to be made.
+• Terminal nodes: Terminal nodes represent the end of the program.
+Lecture 2:Visual Thinking
+56
+
+Control Flow Diagram- Basic Symbols  
+Lecture 2:Visual Thinking
+57
+
+Linear Search – Flow Chart 
+Lecture 2:Visual Thinking
+58
+
+Process Flow Diagrams 
+• A process flow diagram is a flowchart that illustrates the sequence 
+of steps needed to complete a business process.
+• It uses standardized symbols to describe and depict the flow 
+between each step.
+• Application: Process flow diagrams are used in project management, business 
+processes, and software development to visualize workflows and identify 
+bottlenecks.
+Lecture 2:Visual Thinking
+59
+
+Process Flow Diagram – Hiring Process 
+Lecture 2:Visual Thinking
+60
+
+Process Flow Diagram: Order Processing 
+Lecture 2:Visual Thinking
+61
+
+Steps for making a business process flow diagram
+1. Determine the main components of the process.
+2. Order the activities
+3. Choose the correct symbols for each activity 
+4. Make the connection between the activities
+5. Indicate the beginning and end of the process
+6. Review your business process diagram
+Lecture 2:Visual Thinking
+62
+
+Swim Lanes 
+Lecture 2:Visual Thinking
+63
+
+Swim Lanes 
+• A swim lane diagram delineates who does what in a process.
+• Using the metaphor of lanes in a pool, a swim lane diagram provides clarity 
+and accountability by placing process steps within “swim lanes” of a particular 
+employee, work group or department.
+Lecture 2:Visual Thinking
+64
+Application: They are valuable in business process analysis and team collaboration scenarios 
+to understand roles and handoffs.
+
+Order Processing
+Lecture 2:Visual Thinking
+65
+
+Student Registration
+Lecture 2:Visual Thinking
+66
+
+Website Changes
+Lecture 2:Visual Thinking
+67
+
+Week 1  - Reading Assignment 
+• Chapter 1 : Introduction to Computers and Programming
+( Book 1 : Starting out with Python)
+Lecture 1: Introduction to Computational Thinking
+68
+
+References 
+• [1] An overview of computational thinking.
+• [2] The long quest for computational thinking. 
+• [3] What is ChatGPT and How it works?
+• [4] https://www.cybermedian.com/pl/comprehensive-guide-to-flowchart-
+with-50-examples/
+• [5]https://www.officetimeline.com/swimlane-diagram
+Lecture 2:Visual Thinking
+69

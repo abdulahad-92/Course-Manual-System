@@ -1,0 +1,90 @@
+version: 1
+project:
+  title: 'MIS 103: Introduction to Computer Applications'
+  authors:
+  - name: Engr Dr Syed Irfan Nabi
+  jupyter: true
+  thebe: true
+  thebe_config:
+    kernel_name: python3
+  toc:
+  - title: Course Overview
+    file: content/00_Course_Overview/01_overview.md
+  - title: Syllabus & Pedagogy
+    children:
+    - file: content/00_Course_Overview/02_syllabus_schedule.md
+    - file: content/00_Course_Overview/03_teaching_methodology.md
+    - file: content/00_Course_Overview/04_resources.md
+  - title: Computational Thinking
+    file: content/01_Computational_Thinking/01_lecture_notes.md
+    children:
+    - file: content/01_Computational_Thinking/02_examples.md
+    - file: content/01_Computational_Thinking/03_lab_assignment.md
+    - file: content/01_Computational_Thinking/04_resources.md
+  - title: Intro to Python
+    file: content/02_Intro_to_Python/01_lecture_notes.md
+    children:
+    - file: content/02_Intro_to_Python/02_examples.md
+    - file: content/02_Intro_to_Python/03_lab_assignment.md
+    - file: content/02_Intro_to_Python/04_resources.md
+  - title: Control Structures
+    file: content/03_Control_Structures/01_lecture_notes.md
+    children:
+    - file: content/03_Control_Structures/02_examples.md
+    - file: content/03_Control_Structures/03_lab_assignment.md
+    - file: content/03_Control_Structures/04_resources.md
+  - title: Container Data Types
+    file: content/04_Container_Data_Types/01_lecture_notes.md
+    children:
+    - file: content/04_Container_Data_Types/02_examples.md
+    - file: content/04_Container_Data_Types/03_lab_assignment.md
+    - file: content/04_Container_Data_Types/04_resources.md
+  - title: Functions
+    file: content/05_Functions/01_lecture_notes.md
+    children:
+    - file: content/05_Functions/02_examples.md
+    - file: content/05_Functions/03_lab_assignment.md
+    - file: content/05_Functions/04_resources.md
+  - title: Files and Exceptions
+    file: content/06_Files_and_Exceptions/01_lecture_notes.md
+    children:
+    - file: content/06_Files_and_Exceptions/02_examples.md
+    - file: content/06_Files_and_Exceptions/03_lab_assignment.md
+    - file: content/06_Files_and_Exceptions/04_resources.md
+  - title: Pandas Fundamentals
+    file: content/07_Pandas_Fundamentals/01_lecture_notes.md
+    children:
+    - file: content/07_Pandas_Fundamentals/02_examples.md
+    - file: content/07_Pandas_Fundamentals/03_lab_assignment.md
+    - file: content/07_Pandas_Fundamentals/04_resources.md
+  - title: Data Quality
+    file: content/08_Data_Quality/01_lecture_notes.md
+    children:
+    - file: content/08_Data_Quality/02_examples.md
+    - file: content/08_Data_Quality/03_lab_assignment.md
+    - file: content/08_Data_Quality/04_resources.md
+  - title: NumPy Foundations
+    file: content/09_NumPy_Foundations/01_lecture_notes.md
+    children:
+    - file: content/09_NumPy_Foundations/02_examples.md
+    - file: content/09_NumPy_Foundations/03_lab_assignment.md
+    - file: content/09_NumPy_Foundations/04_resources.md
+  - title: EDA and Visualization
+    file: content/10_EDA_and_Visualization/01_lecture_notes.md
+    children:
+    - file: content/10_EDA_and_Visualization/02_examples.md
+    - file: content/10_EDA_and_Visualization/03_lab_assignment.md
+    - file: content/10_EDA_and_Visualization/04_resources.md
+site:
+  template: book-theme
+  head:
+  - tag: script
+    attributes:
+      type: text/x-thebe-config
+    value: '{"useBinder": false, "useJupyterLite": true}'
+  options:
+    launch_buttons:
+      thebe: true
+    actions:
+    - title: Open in Google Colab
+      url: https://colab.research.google.com

@@ -1,0 +1,33 @@
+# Module 2: Python Syntax, Variables & Input/Output: Lab Assignment
+
+> Practical programming assignment for students | CLO: CLO-1
+
+## Problem Statement
+
+Write a Python program that solves a practical business or data analysis scenario related to this module's topics.
+
+### Requirements:
+1. Requirement 1: Validate user input or data structure.
+2. Requirement 2: Apply appropriate algorithmic logic.
+3. Requirement 3: Display clean, formatted results.
+
+## Expected Output
+
+```
+Sample program run showing input and formatted output.
+```
+
+## Grading Notes
+
+- Check for correct syntax and error handling.
+- Ensure code is well-commented and follows naming conventions.
+
+```{dropdown} Instructor Solution Key (Hidden from Students by Default)
+```python
+# Complete reference solution for grading
+def reference_solution():
+    print("Solution executed successfully.")
+
+reference_solution()
+```
+```

@@ -1,0 +1,419 @@
+ 
+ 
+MIS 103: Introduction to Computer Applications 
+Course Outline - Tentative 
+School of Mathematics and Computer Science (SMCS), IBA Karachi 
+Spring 2026 
+Program 
+BBA 
+Department Offering 
+School of Mathematics and Computer Science (SMCS) 
+Class ERP Number 
+100205, 100206, and 100207,  
+Faculty 
+Engr Dr Syed Irfan Nabi 
+ 
+Class details 
+Class Days, Timing and Room 
+Session Days 
+Time 
+Classroom 
+Section  
+ 
+Mon/Wed  
+ 
+8:30 - 9:45 am 
+10:00 – 11:15 am 
+11:30 – 12:45 pm
+MTL4 
+ 
+ 
+ 
+Credit Hours
+3 Credit Hours 
+Email 
+syedirfannabi@gmail.com
+Counselling Hours
+Tue/Thr 14:00 – 15:00 pm or by appointment; drop an email
+Course Description 
+Introduction to Computer Applications (ICA) equips students with essential skills in structured problem-solving, computational 
+thinking, and data analysis within a business context. The course is designed for students with no prior computer science background, 
+enabling them to effectively leverage technology and information resources for data analysis.  
+Program Learning Goals 
+Technology & Information Literacy (PLC5) 
+ 
+Statement: Students will be able to leverage technology and information resources to analyze data and communicate 
+effectively in the business context. 
+ 
+Utilize appropriate tools for analyzing business problem (PLO 501) (Introduce)  
+ 
+Utilize technology effectively for communication in a business context (PLO 502) (Enhance)
+Course Learning Outcomes (CLOs) 
+1. 
+CLO-1: Structured problem-solving (concepts) using frameworks and tools.  
+2. 
+CLO-2: Learn essential programming fundamental from problem solving and data analysis perspective. 
+3. 
+CLO-3: Perform data analysis in context of a business problem. 
+ 
+Mapping Assessment to CLO  
+Class Participation: CLO1, CLO2, CLO3 
+Quizzes: CLO1, CLO2, CLO3 
+Labs Assignments: CLO2, CLO3 
+Home Assignments: CLO2, CLO3 
+Term Exams: CLO1, CLO2, CLO3  
+Project: CLO2, CLO3
+Teaching and Learning Methodology  
+1. This course needs pre-class reading (if provided), active class participation and regular post lecture follow-up.  
+2. Lecture presentations and related resources will be uploaded on Learning Management System (LMS). 
+3. In class, lab assignments (graded) will be given to enforce hands-on experience with tools and techniques. 
+4. Quizzes will be un-announced, covering theoretical as well as practical aspects.  
+
+ 
+ 
+Course Learning Outcomes mapped to Program Learning Objectives 
+Program Learning Goals
+Course Learning Outcomes 
+PLO 501 
+PLO 502 
+CLO 1 
+× 
+CLO 2 
+×
+CLO 3 
+×
+×
+Week / Reference Material   
+Mapping to 
+Course 
+Learning 
+Outcomes 
+Session Topic 
+ 
+               Week 1 
+1. An overview of computational 
+thinking.  
+ 
+CLO1 
+Computational Thinking  
+ 
+Structured Problem Solving  
+ 
+Abstraction  
+ 
+Problem Decomposition 
+ 
+Algorithm Design 
+ 
+Generalization  
+ 
+Visual Thinking (Mind Maps, Flow Charts)
+Week 2 
+Chapter 1 & Chapter 2 (Book1)1 
+Lab Assignment#1 
+ 
+CLO2 
+Introduction to Python  
+ 
+Introduction 
+ 
+Setup & Installation 
+ 
+“Hello World” from Python Shell, Command Line and IDLE
+ 
+Input, Output, and Processing 
+ 
+Variables and Data Types    
+ 
+Comments in Python  
+ 
+How Python works (Interpreter, Python VM)
+Week 3 &4 (3 Sessions) 
+Chapter 3 & Chapter 4 (Book1) 
+Lab Assignment 2 &3 
+ 
+CLO2 
+Control Structures  
+ 
+Introduction  
+ 
+Python Operators (Arithmetic, Relational, logical) 
+ 
+Conditional Statements (if, if-else, elif), match case.  
+ 
+Loops (for, while, while True)
+ 
+               Week 4,5,6 (4 Sessions) 
+Chapter 7 & Chapter 9 (Book1) 
+Lab Assignment 4,5 and 6           
+CLO2 
+Container Data Types  
+ 
+List & Tuples  
+ 
+Sets 
+
+Dictionaries 
+Week 6 &7 (three Sessions) 
+Chapter 5 (Book1) 
+Lab Assignment 8 
+CLO2 
+Functions  
+ 
+Introduction   
+ 
+Defining and calling functions 
+ 
+Variable Scope 
+ 
+Arguments and Parameters 
+ 
+Value Returning Function  
+ 
+Lambda Functions   
+
+Built-in Functions 
+Midterm Exam 
+Week 8  
+Chapter 6 (Book1) 
+Lab 9 
+ 
+CLO2 
+Files and Exception Handling  
+ 
+Files – why we need files? 
+ 
+Types of files  
+ 
+Working with text files (Read, Write and Modify) 
+ 
+Programming Errors and Exceptions 
+ 
+1 Starting out with Python  
+
+ 
+ 
+ 
+try and except Mechanism.  
+ 
+else and finally 
+Week 9&10 
+1. Jupyter Notebook- Tutorial 
+2. Bank Marketing Dataset 
+Chapter 5 & 8 (Book 2)2 
+Lab Assignment 10 (a&b) 
+CLO3 
+Working with Pandas 
+ 
+Introduction to Pandas  
+ 
+DataFrames and Pandas Series 
+ 
+Reading Excel and CSV Files in Jupyter Notebook 
+ 
+Data Description Commands  
+ 
+Indexing & Slicing 
+ 
+Data Aggregation, Pivot Tables and groupby 
+ 
+Concatenation 
+Week 11 
+                Chapter 7 (Book 2)  
+                Lab Assignment 11 & 12 
+CLO3 
+Handling Data Quality Problems 
+ 
+Missing Values Detection & Configuration  
+ 
+Dealing Incorrect Data as Missing Values 
+ 
+Handling Missing Values, Imputation  
+ 
+Removing Duplicates 
+ 
+Inspecting Data Type Issues  
+ 
+Changing Data Types  
+       Week 12 
+Chapter 4 (Book2) 
+ 
+         CLO2 
+Working with NumPy 
+ 
+NumPy Introduction  
+ 
+Array creation, iteration, indexing, slicing and reshape. 
+ 
+Basic arithmetic operations  
+ 
+Pseudorandom Number Generation (Normal Distribution)
+    Week 13 &14  
+               Chapter 9 & 13(Book2) 
+                  Lab Assignment 13 
+         CLO3  
+EDA using Data Visualization  
+ 
+Introduction to Matplotlib, Seaborn and Plotly  
+ 
+Creating and configuring plots using pyplot 
+ 
+Markers and Axis Labels and Titles  
+ 
+Creating Basic Charts (bar, pie, box, histogram, line, scatter 
+Heatmaps
+Final Exam
+ 
+Textbook and Pre-Course Reading Material, Important Dates. 
+Recommended Text: 
+1. Starting out with Python, Tonny Gaddis, Third Edition / Latest Edition (Book1) 
+2. Python for Data Analysis: Data Wrangling with pandas, NumPy, and Jupyter (3rd Edition), Wes McKinney (Book2) 
+3. Think Python – 3rd /Latest Edition 
+Important Dates 
+ 
+Midterm Exam:  October 13-October 18, 2025 
+ 
+Mid-semester Break: October 20, October 2025 
+ 
+Classes End: December 14, 2025 
+ 
+Final Exam:  December 17, December 30, 2025 
+ 
+Result Submission Deadline: January 09, 2026 
+ 
+Prerequisite Skills and Knowledge to take this Course 
+None  
+ 
+Assessments and Grading Scheme 
+Assessment 
+Due Date 
+Remarks 
+Class participation  
+Ongoing  
+Punctuality, discipline, and overall interactivity in the class 
+Quizzes 
+Ongoing 
+Hands-On, Hacker Tank, MCQs based on LMS, Concepts  
+ 
+2 Python for Data Analysis  
+
+ 
+ 
+Lab Assignments  
+Ongoing 
+Short Lab Assignments related to python and data analysis 
+Home Assignments  
+Ongoing 
+The assignments will be based on end of chapter questions / core 
+concepts / skills and will be submitted through LMS
+Project  
+Before Final Exam 
+Group project based on a chosen dataset and business problem 
+Midterm and Final Exam Paper 
+Exam Weeks 
+There are two exams of 20+30 weightage 
+This course follows absolute grading with default IBA grading scale 
+ 
+ 
+Marks Distribution (Tentative)  
+Marks Head 
+Total Frequency 
+ 
+Exempted 
+Marks  
+Total Marks /Head 
+Quizzes (N-1)
+N
+m
+15
+15
+Assignments & CP
+N
+m
+25
+25
+Project 
+1
+0
+10
+10
+Term Exams
+2
+0
+20+30
+50
+Total Marks
+100
+ 
+Marks distribution is consistent and standardized. In lab assignments, there can be a variation in frequency (N) and 
+exempted lab assignments (m).  
+ 
+Guidelines  
+• 
+Since subsequent topics are built on previously learned material, it is imperative that students keep up with the material. 
+• 
+A student who misses a class is responsible for obtaining information on course content, assignments, due dates, test dates, 
+etc.  
+• 
+It will only be possible to get full marks in class participation if you have full attendance. 
+• 
+Unethical behavior (cheating, plagiarism, proxy attendance) will be strictly penalized as per IBA policy. 
+• 
+Students are expected to read all topics and solve all end of chapter problems given in the textbook. 
+• 
+Students are expected to go through all the provided teaching resources and web links. 
+• 
+Attendance is mandatory and the IBA general attendance policy applies in this course. No more than 5 absences allowed 
+or as per IBA general attendance policy. 
+• 
+No Email or drop box submission will be accepted for any evaluation task. 
+• 
+10 % deduction on late submission on LMS – No submission will be accepted after the late deadline expires.  
+• 
+In case of make-up exam, IBA general policy applies. A student can request for a make-up exam based on the reason 
+mentioned in IBA make-up exam policy. The faculty may retake the exam or assign average marks based on marks in 
+Quizzes and/or Final Examination.  
+• 
+Any request for a make-up exam should be made to the program office / Examination office keeping the instructor in cc 
+with reasons and proofs. 
+• 
+There is no make-up for any quiz, lab assignment, home assignment and project. 
+ 
+Technology & Innovation 
+• 
+All course materials will be posted on LMS, and grades will be posted on UMS. Students are responsible to stay updated 
+on these platforms.  
+• 
+Students should have credentials to access the lab PCs, internet, UMS, LMS and email account.  
+• 
+For discussions and course related queries please join the class Whatsapp group and avoid sending direct messages 
+• 
+In case of course related queries, visit the instructor individually during counselling hours after seeking prior appointment. 
+ 
+Experiential Learning Exposure(s)
+
+Guest Speaker Session/ Group Assignments/ Project
+ 
+Social Contribution / Impact 
+ 
+Consideration of the data security, privacy, netiquettes, and copyrights  
+
+ 
+ 
+ 
+Academic Conduct  
+IBA policy
+Attendance Policy 
+IBA policy
+Plagiarism Policy 
+IBA policy
+Withdrawal Policy 
+IBA policy
+Policy Regarding the use of AI Tools 
+ 
+Self-Learning: Students are welcome to use AI tools for self-learning or to explore different dimensions of topics 
+covered in class. 
+Once you have learned the necessary syntax and developed essential skills in this course, using AI tools may be more beneficial in 
+your future work. 
+Details AI policy shall be shared separately.
+ 

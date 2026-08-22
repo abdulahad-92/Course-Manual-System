@@ -1,0 +1,11 @@
+CustomerID,FullName,Email,Phone,City,AnnualSpendPKR
+C101,Ali Khan,ali.khan@email.com,0300-1234567,Karachi,145000
+C102,Sara Ahmed,sara.a@email.com,0321-7654321,Lahore,98000
+C103,Bilal Raza,,0333-1112233,Karachi,
+C101,Ali Khan,ali.khan@email.com,0300-1234567,Karachi,145000
+C104,Zainab Bibi,zainab@email.com,,Islamabad,210000
+C105,Omar Farooq,omar.f@email.com,0345-9988776,karachi,65000
+C106,Ayesha Tariq,ayesha@email.com,0300-5556667,LAHORE,-5000
+C107,Usman Ali,usman@email.com,0311-4433221,Karachi,175000
+C108,Hira Nisar,,0322-8877665,Karachi,45000
+C109,Fahad Shah,fahad@email.com,0333-3322110,Islamabad,320000

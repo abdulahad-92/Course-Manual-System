@@ -1,0 +1,56 @@
+---
+kernelspec:
+  name: python3
+  display_name: Python 3
+---
+# Module 8: Code Examples
+
+[![Open in Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/)
+[![Executable Code Cells](https://img.shields.io/badge/MyST-Interactive%20Live%20Code-007ACC?logo=jupyter)](http://localhost:3000)
+
+> 💡 **Interactive Execution**: Click the **Run / Power button** in the top navigation bar to make all code cells below live and editable, or click **Open in Colab** to run the companion Jupyter notebook.
+
+---
+## Data Quality, Cleaning & Preparation
+
+> Companion executable code snippets for classroom demonstrations. Click the **power button** at the top of the page to run these cells interactively.
+
+---
+
+### Example 1: Identifying Missing Values and Duplicates
+
+**Setup**: Load `data/messy_customer_data.csv` and inspect data quality anomalies.  
+**Point**: Demonstrate `.isna().sum()` and `.duplicated()`.
+
+```{code-cell} python3
+import pandas as pd
+
+df_messy = pd.read_csv("data/messy_customer_data.csv")
+print("--- Missing Values Count ---")
+print(df_messy.isna().sum())
+
+print("\n--- Duplicate Customer Records ---")
+print(df_messy[df_messy.duplicated(subset=["CustomerID"])])
+```
+
+---
+
+### Example 2: Data Cleaning & Standardizing Formats
+
+```{code-cell} python3
+# 1. Drop duplicates
+df_clean = df_messy.drop_duplicates(subset=["CustomerID"]).copy()
+
+# 2. Fill missing annual spend with median
+median_spend = df_clean["AnnualSpendPKR"].median()
+df_clean["AnnualSpendPKR"] = df_clean["AnnualSpendPKR"].fillna(median_spend)
+
+# 3. Standardize City casing
+df_clean["City"] = df_clean["City"].str.title()
+
+# 4. Remove negative outliers
+df_clean = df_clean[df_clean["AnnualSpendPKR"] >= 0]
+
+print("--- Cleaned Customer Records (Top 5) ---")
+print(df_clean.head())
+```

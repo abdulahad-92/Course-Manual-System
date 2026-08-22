@@ -1,0 +1,96 @@
+---
+kernelspec:
+  name: python3
+  display_name: Python 3
+---
+# Module 1: Code Examples
+
+[![Open in Colab (Instant Notebook)](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/#create=true)
+[![Launch In-Browser Python REPL (JupyterLite)](https://img.shields.io/badge/JupyterLite-Live%20Python%20REPL-F37726?logo=jupyter)](https://jupyterlite.github.io/demo/repl/index.html?kernel=python&toolbar=1)
+
+> 💡 **How to Edit & Run Code**:
+> 1. **In-Page Live Code**: Click the **Power / Run icon** at the top-right navigation bar to initialize JupyterLite (WASM). Once loaded, click inside any code block below to edit variables and press **Run**.
+> 2. **Instant Online IDE**: Click **Open in Colab** or **JupyterLite REPL** above to open a dedicated, zero-install interactive Python notebook where you can paste, edit, and experiment freely!
+
+---
+
+## Algorithmic Thinking & First Python Scripts
+
+> Companion executable code snippets for classroom demonstrations. Click the **power button** at the top of the page to run these cells interactively.
+
+---
+
+### Example 1: Your First Business Python Script
+
+**Setup**: Show how a basic Python script emits output and uses comments to explain algorithmic intent.  
+**Point**: Demonstrate `print()`, inline comments, and basic string output.
+
+```{code-cell} python3
+# IBA Karachi - MIS 103 Welcome Script
+# Author: Engr Dr Syed Irfan Nabi
+
+print("==========================================")
+print("Welcome to MIS 103: Computer Applications!")
+print("System Status: Environment Configured.")
+print("==========================================")
+```
+
+**Expected Output**:
+```
+==========================================
+Welcome to MIS 103: Computer Applications!
+System Status: Environment Configured.
+==========================================
+```
+
+---
+
+### Example 2: Algorithmic Break-Even Calculation
+
+**Setup**: Translate a three-step business break-even algorithm into Python arithmetic.  
+**Point**: Show how sequential execution evaluates variables and performs division.
+
+```{code-cell} python3
+# Step 1: Input variables
+fixed_operating_costs = 250000.0  # PKR 250,000
+unit_sale_price = 1500.0
+unit_variable_cost = 850.0
+
+# Step 2: Algorithmic processing
+contribution_margin = unit_sale_price - unit_variable_cost
+break_even_units = fixed_operating_costs / contribution_margin
+
+# Step 3: Output display
+print("Contribution Margin (per unit): PKR", contribution_margin)
+print("Break-Even Volume Required    :", int(break_even_units), "units")
+```
+
+**Expected Output**:
+```
+Contribution Margin (per unit): PKR 650.0
+Break-Even Volume Required    : 384 units
+```
+
+---
+
+### Spot the Bug: Case Sensitivity & String Rules
+
+```{code-cell} python3
+# BROKEN CODE - Classroom Debugging Exercise
+# Ask students: Why do both of these lines cause Python errors?
+
+Print("Starting calculation...")
+print(Break-Even calculations complete)
+```
+
+```{dropdown} Instructor Solution & Explanation
+**Why it fails:**
+1. Python is strictly **case-sensitive**. `Print` with a capital `P` is not recognized as the built-in function `print()`, raising a `NameError`.
+2. Text literals must be enclosed in quotation marks (`"..."` or `'...'`). Without quotes, Python interprets unquoted text like `Break-Even` as variable names or subtraction operations, causing a `SyntaxError`.
+
+**How to fix it:**
+```{code-cell} python3
+print("Starting calculation...")
+print("Break-Even calculations complete")
+```
+```

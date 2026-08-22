@@ -1,0 +1,295 @@
+Introduction to Computer Applications 
+Lecture 4: Data Structures
+1
+
+Data Structures 
+• Data structures are a way of organizing and storing data so that they can be 
+accessed and worked with efficiently.
+• They define the relationship between the data, and the operations that can 
+be performed on the data. 
+• Two main types
+• Primitive Data Structures/  Types 
+• Store a single value of a specific type
+• Integer , Float, String, Boolean 
+• Non-Primitive Data Structures
+• Store multiple values of different types in different structures
+• Arrays , Lists, Tuples, Sets , Dictionaries 
+• Abstract Data Types
+• Defined with the help of classes and Object Oriented Programming Techniques
+• Distance , Time , Point in Cartesian Plane etc. 
+2
+
+Python Data Structures
+3
+
+Lists in Python 
+4
+
+List 
+• A list is a sequence type in Python ( other seq types : tuples, strings)
+• Sequence 
+• A sequence is a positionally ordered collection of items
+• You can refer any item with the help of an index like a[0] , a[1] etc.
+• Index starts at 0 
+• For a sequence with 10 elements , index will range in 0-9 . 
+• List , tuples and strings are python sequences 
+• Mutable 
+• List elements can be changed 
+• Can contain heterogeneous data elements 
+• Can store strings, integers , floats , etc. 
+5
+
+Python Lists – Example  
+6
+
+List Operations 
+• Creating list 
+• Creating an empty list
+• mylist=[]
+• Creating a list with some values 
+• languages=['C', 'C++’, 'java’, 'python’, 'golang’]
+• Converting an iterable to a list 
+• numbers=list(range(0,20))
+• Using repetition operator
+• * is multiplication operator . But if operand on the left is a seq type like list , and operand on the 
+right is an integer , then * acts like a repetition operator and makes multiple copies of the list and 
+joins them altogether.
+• list2=[10]*5
+7
+
+range() – a useful built-in function
+• range() 
+• Creates a type of object called an iterable
+• iterable 
+• An object that contains a sequence of values that can be iterated over 
+• Used in counter-controlled loops ( for loop for example)
+• Syntax
+• range( start, stop, step)
+• By default , start=0 . It is an optional argument
+• stop is required . Specifies the end point. Itself not included 
+• step specifies the increment. By default, it is 1
+8
+
+range() – syntax 
+9
+
+List Operations 
+• Accessing List Elements 
+• Individual list elements can be accessed by specifying the index
+• List index starts at 0 
+• There are two types of index
+• Positive index
+• Starts from 0 , and traverse from left to right 
+• Negative Index 
+• Starts form -1 and traverse from right to left 
+• Mutation 
+• You can change the list values
+• mylist[4]=8 for example 
+10
+
+Some useful built-in list methods 
+11
+
+List Operators 
+• Concatenation Operator  (+)
+• Concatenates two or more strings together
+• in  operator
+• Checks whether an element is present in a list 
+• not  in operator 
+• Checks whether an element is not present in  list 
+• * operator 
+• Acts as a replication operator 
+12
+
+Tuples 
+20
+
+Tuples 
+• A tuple is an immutable sequence type
+• The primary difference between list and tuples is mutability/immutability 
+• Once a tuple is created it cannot be changed
+21
+
+Tuples vs Lists 
+• Tuples support all of the same operations as lists except those which change 
+the contents of the list
+• Tuples support the following:
+• Subscript indexing ( for retrieving element values only)
+• Methods such as index()
+• Built-in function like len , min and max
+• Slicing Expressions 
+• The in operator
+• The + and * operators
+• Tuples do not support methods like 
+• append(), remove() , insert() , reverse() and sort()
+22
+
+Why tuples exist?
+• Immutability is the main difference between tuples and lists
+• Is immutability so important?
+• Processing tuples is faster than processing lists 
+• When you are processing lots of data and your data will not be modified 
+• Tuples are safe
+• You store data once and rest assured that your data will not be modified
+• Accidently or otherwise by any program
+• There are other operations in Python that require the use of tuple
+• As you will learn more about Python , you will encounter tuples more frequently
+23
+
+Sets
+24
+
+Sets in Python
+• A set  is a built-in container type data structure in Python 
+• An unordered collection of  data
+• You cannot access elements with the help of index
+• You cannot insert elements by using index
+• mutable
+• Set elements can be modified in place
+• Heterogenous 
+• You can store elements with different primitive and non-primitive types 
+• Unique
+• Set elements are unique 
+• Elements are enclosed in {} backets 
+25
+
+Sets – Example 
+26
+
+Creating Sets 
+27
+
+Creating a set from Lists 
+28
+
+Creating Empty Sets 
+29
+
+Accessing items in a set
+30
+
+Checking if an element is present in a set
+31
+
+Adding items to a set
+32
+
+Removing items from a set 
+33
+
+Removing Items from a set
+34
+
+Set Operations 
+35
+
+Copying a Set
+36
+
+Frozen Set
+• Although  a set is a mutable data structure , it can be made immutable if 
+required 
+• When we need a set to be readable only 
+• Elements can neither be added nor removed 
+• Create a frozen set
+• All set operations which do not modify the set contents are allowed.
+37
+
+Dictionaries 
+38
+
+Dictionary
+• A built-in data structure that stores values in the form of a key-value pairs
+• Values can be retrieved by using the key 
+39
+
+Creating a Dictionary 
+• Different Options:
+• Using { } braces to define a dictionary with some key-value pairs
+• Creating a dictionary from a sequence 
+• Creating a dictionary with values as a list
+• Creating an empty dictionary 
+40
+
+Accessing Dictionary Elements 
+41
+
+Accessing Dictionary Elements 
+• Two different ways:
+• Using key inside []
+• Using key as an argument to get()
+42
+
+Getting all keys and all values 
+43
+
+Iterating a Dictionary / Accessing Elements 
+• We can iterate through a dictionary using a for loop to access keys and 
+associated values
+• We can also use items()
+• In each item  index [0] contains key and index [1] contains values
+44
+
+Adding / Modifying Elements to a Dictionary  
+• There are two ways:
+• Assign a value to a key like Age[“Ali”]=30 
+• Use update method and pass a key-value
+• Age. Update ({“Ali”:30})
+• Can be used to add multiple key-value pairs 
+• Example 
+• Same process ( assignment and update() ) can be used to update a value against a key 
+45
+
+46
+Removing / Deleting Items from a Dictionary 
+
+Other Dictionary Operations /Methods 
+• len() returns the number of key-value pairs 
+• in operator can be used to check key or value membership
+• sorted() can be used to sort dictionary keys or values 
+• update() method can also be used to combine two dictionaries 
+• dict1.update(dict2) 
+• Duplicate will be removed 
+• If duplicate occurs, dict2 values will be retained 
+• **kwargs can be used to unpack a dictionary and add its elements to another 
+dictionary 
+47
+
+Copying a Dictionary 
+• Use copy() method
+• It creates a new dictionary with the same key-value pairs 
+• dict2=dict1.copy()
+• Use assignment ‘=‘ operator 
+• dict2=dict1
+• Copies the reference
+• Both dict2 and dict1 refer to the same object
+• Any changes made in dict1 will reflect in dict1 and vice versa
+48
+
+Nested Dictionaries 
+• A dictionary can be nested within another dictionary 
+49
+
+Iterating through Nested Dictionaries 
+50
+
+Python Data Structures – A Comparison 
+51
+
+Acknowledgement  / Resources 
+The contents of this lecture is derived from the following resources:
+• Arrays
+• https://www.freecodecamp.org/news/python-array-tutorial-define-index-methods/
+• https://www.datacamp.com/tutorial/data-structures-python#abstract-data-type-and-data-structures
+• Lists & Tuples 
+• Staring out with Python ( Third Edition) By Tony Gaddis 
+• Chapter 8 : List and Tuples 
+• https://pynative.com/python-range-function/
+• https://pynative.com/python-tuples/
+• Set and Dictionaries 
+• Staring out with Python ( Third Edition) By Tony Gaddis 
+• Chapter 9 : Dictionaries and Sets
+• https://pynative.com/python-sets/
+• https://pynative.com/python-dictionaries/
+• https://www.slideshare.net/rampalliraj/learn-python-for-beginners-part2
+52
