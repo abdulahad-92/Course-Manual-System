@@ -1,0 +1,166 @@
+---
+kernelspec:
+  name: python3
+  display_name: Python 3
+---
+# Module 4: Code Examples
+
+[![Open in Colab (Instant Notebook)](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/#create=true)
+[![Launch In-Browser Python REPL (JupyterLite)](https://img.shields.io/badge/JupyterLite-Live%20Python%20REPL-F37726?logo=jupyter)](https://jupyterlite.github.io/demo/repl/index.html?kernel=python&toolbar=1)
+
+> 💡 **3 Ways to Edit & Run Code**:
+> - **Option 01 (In-Page Live Editor)**: Use the embedded interactive Python code playground directly on this page below! You can paste, edit, and run any snippet without leaving the page.
+> - **Option 02 (Instant Colab Notebook)**: Click **Open in Colab** above to launch a brand-new cloud notebook on Google Colab (`#create=true`).
+> - **Option 03 (Fullscreen Browser REPL)**: Click **JupyterLite REPL** above to open a standalone, zero-install Python console in a new browser tab.
+
+---
+
+### 🖥️ Option 01: In-Page Live Interactive Python Editor & Runner
+> Test, modify, and execute any code from this module **directly on this page** using the embedded browser Python kernel below. Click inside the editor, write or paste your code, and press **Shift + Enter** (or click **Run**)!
+
+<div style="margin: 15px 0; border: 2px solid #007ACC; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+  <iframe src="https://jupyterlite.github.io/demo/repl/index.html?kernel=python&toolbar=1" width="100%" height="420px" frameborder="0"></iframe>
+</div>
+
+---
+
+## Lists, Tuples, Sets, and Dictionaries
+
+---
+
+### Example 1: List Operations
+
+```{code-cell} python3
+languages = ['C', 'C++', 'Java', 'Python', 'Go']
+
+# Indexing
+print(languages[0])     # C       (positive index)
+print(languages[-1])    # Go      (negative index)
+
+# Methods
+languages.append('Rust')
+languages.insert(2, 'C#')
+languages.remove('C++')
+print(languages)
+
+# Operators
+print('Python' in languages)    # True
+doubled = languages * 2
+print(len(doubled))
+```
+
+---
+
+### Example 2: Tuple Basics
+
+```{code-cell} python3
+coordinates = (33.6844, 73.0479)    # Islamabad lat/long
+single = (42,)                       # Single-element tuple needs comma
+
+print(coordinates[0])
+print(len(coordinates))
+
+# This will FAIL:
+# coordinates[0] = 34.0    # TypeError — tuples are immutable
+```
+
+---
+
+### Example 3: Set — Removing Duplicates
+
+```{code-cell} python3
+raw_emails = ["ali@email.com", "sara@email.com", "ali@email.com",
+              "bilal@email.com", "sara@email.com"]
+
+unique = set(raw_emails)
+print(f"Before: {len(raw_emails)}, After: {len(unique)}")
+print(sorted(unique))
+```
+
+---
+
+### Example 4: Set Operations
+
+```{code-cell} python3
+cs_students = {"Ali", "Sara", "Bilal", "Zainab"}
+math_students = {"Sara", "Usman", "Bilal", "Hira"}
+
+print("Both CS & Math:", cs_students & math_students)     # Intersection
+print("Either or both:", cs_students | math_students)      # Union
+print("CS only:", cs_students - math_students)             # Difference
+```
+
+---
+
+### Example 5: Dictionary CRUD
+
+```{code-cell} python3
+student = {"name": "Ali Khan", "age": 20, "program": "BBA"}
+
+# Read
+print(student["name"])
+print(student.get("gpa", "N/A"))    # Returns "N/A" if key missing
+
+# Update
+student["age"] = 21
+student.update({"gpa": 3.5, "section": "A"})
+
+# Delete
+del student["section"]
+
+# Iterate
+for key, value in student.items():
+    print(f"{key}: {value}")
+```
+
+---
+
+### Example 6: Nested Dictionary
+
+```{code-cell} python3
+students = {
+    "S001": {"name": "Ali", "grade": "A"},
+    "S002": {"name": "Sara", "grade": "B+"},
+    "S003": {"name": "Bilal", "grade": "A-"}
+}
+
+for sid, info in students.items():
+    print(f"{sid} → {info['name']} ({info['grade']})")
+```
+
+---
+
+### Example 7: Methods vs Functions (Dot Rule)
+
+```{code-cell} python3
+lst = [10, 20, 30]
+
+# Methods (dot) — the OBJECT does something
+lst.append(40)
+lst.sort()
+
+# Functions (no dot) — PYTHON tells you something about the object
+print(len(lst))
+print(max(lst))
+print(sum(lst))
+print(type(lst))
+```
+
+---
+
+### Spot the Bug: Empty Set Trap
+
+```{code-cell} python3
+# BROKEN CODE — Is this really an empty set?
+empty = {}
+print(type(empty))    # <class 'dict'> — NOT a set!
+```
+
+```{dropdown} Instructor Solution
+`{}` creates an empty **dictionary**, not an empty set. To create an empty set, use `set()`.
+
+```{code-cell} python3
+empty_set = set()
+print(type(empty_set))    # <class 'set'>
+```
+```
