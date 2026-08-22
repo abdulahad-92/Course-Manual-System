@@ -33,20 +33,37 @@ jobs:
         run: myst build --html
 
       - name: Fix GitHub Pages asset paths
+        env:
+          REPO_NAME: ${{ github.event.repository.name }}
         run: |
           python - <<'PY'
+          import os
           from pathlib import Path
+
           root = Path('_build/html')
-          prefix = '/Course-Manual-System'
+          repo_name = os.environ.get('REPO_NAME', '').strip()
+          prefix = f'/{repo_name}' if repo_name else ''
+
+          if not prefix:
+              raise RuntimeError('REPO_NAME is empty; cannot build a valid GitHub Pages subpath.')
+
           for html in root.rglob('*.html'):
               text = html.read_text(encoding='utf-8')
-              text = text.replace('href="/', f'href="{prefix}/')
-              text = text.replace('src="/', f'src="{prefix}/')
-              text = text.replace('content="/', f'content="{prefix}/')
-              text = text.replace('url("/', f'url("{prefix}/')
-              text = text.replace("href='/", f"href='{prefix}/")
-              text = text.replace("src='/", f"src='{prefix}/")
-              html.write_text(text, encoding='utf-8')
+              original = text
+              replacements = [
+                  ('href="/', f'href="{prefix}/'),
+                  ('src="/', f'src="{prefix}/'),
+                  ('content="/', f'content="{prefix}/'),
+                  ('url("/', f'url("{prefix}/'),
+                  ("href='/", f"href='{prefix}/"),
+                  ("src='/", f"src='{prefix}/"),
+                  ('href="./', f'href="{prefix}/'),
+                  ('src="./', f'src="{prefix}/'),
+              ]
+              for old, new in replacements:
+                  text = text.replace(old, new)
+              if text != original:
+                  html.write_text(text, encoding='utf-8')
           PY
 
       - name: Upload artifact
