@@ -47,19 +47,28 @@ jobs:
           if not prefix:
               raise RuntimeError('REPO_NAME is empty; cannot build a valid GitHub Pages subpath.')
 
+          replacements = [
+              ('"/build/', f'"{prefix}/build/'),
+              ("'/build/", f"'{prefix}/build/"),
+              ('"/myst-theme.css', f'"{prefix}/myst-theme.css'),
+              ("'/myst-theme.css", f"'{prefix}/myst-theme.css"),
+              ('"/favicon.ico', f'"{prefix}/favicon.ico'),
+              ("'/favicon.ico", f"'{prefix}/favicon.ico"),
+              ('href="/', f'href="{prefix}/'),
+              ('src="/', f'src="{prefix}/'),
+              ('content="/', f'content="{prefix}/'),
+              ('url("/', f'url("{prefix}/'),
+              ("href='/'", f"href='{prefix}/"),
+              ("src='/'", f"src='{prefix}/"),
+              ("url('/", f"url('{prefix}/"),
+              ('href="./', f'href="{prefix}/'),
+              ('src="./', f'src="{prefix}/'),
+              ('content="./', f'content="{prefix}/'),
+          ]
+
           for html in root.rglob('*.html'):
               text = html.read_text(encoding='utf-8')
               original = text
-              replacements = [
-                  ('href="/', f'href="{prefix}/'),
-                  ('src="/', f'src="{prefix}/'),
-                  ('content="/', f'content="{prefix}/'),
-                  ('url("/', f'url("{prefix}/'),
-                  ("href='/", f"href='{prefix}/"),
-                  ("src='/", f"src='{prefix}/"),
-                  ('href="./', f'href="{prefix}/'),
-                  ('src="./', f'src="{prefix}/'),
-              ]
               for old, new in replacements:
                   text = text.replace(old, new)
               if text != original:
