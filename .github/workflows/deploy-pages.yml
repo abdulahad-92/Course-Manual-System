@@ -30,50 +30,9 @@ jobs:
         run: python -m pip install --upgrade pip mystmd
 
       - name: Build site
-        run: myst build --html
-
-      - name: Fix GitHub Pages asset paths
         env:
-          REPO_NAME: ${{ github.event.repository.name }}
-        run: |
-          python - <<'PY'
-          import os
-          from pathlib import Path
-
-          root = Path('_build/html')
-          repo_name = os.environ.get('REPO_NAME', '').strip()
-          prefix = f'/{repo_name}' if repo_name else ''
-
-          if not prefix:
-              raise RuntimeError('REPO_NAME is empty; cannot build a valid GitHub Pages subpath.')
-
-          replacements = [
-              ('"/build/', f'"{prefix}/build/'),
-              ("'/build/", f"'{prefix}/build/"),
-              ('"/myst-theme.css', f'"{prefix}/myst-theme.css'),
-              ("'/myst-theme.css", f"'{prefix}/myst-theme.css"),
-              ('"/favicon.ico', f'"{prefix}/favicon.ico'),
-              ("'/favicon.ico", f"'{prefix}/favicon.ico"),
-              ('href="/', f'href="{prefix}/'),
-              ('src="/', f'src="{prefix}/'),
-              ('content="/', f'content="{prefix}/'),
-              ('url("/', f'url("{prefix}/'),
-              ("href='/'", f"href='{prefix}/"),
-              ("src='/'", f"src='{prefix}/"),
-              ("url('/", f"url('{prefix}/"),
-              ('href="./', f'href="{prefix}/'),
-              ('src="./', f'src="{prefix}/'),
-              ('content="./', f'content="{prefix}/'),
-          ]
-
-          for html in root.rglob('*.html'):
-              text = html.read_text(encoding='utf-8')
-              original = text
-              for old, new in replacements:
-                  text = text.replace(old, new)
-              if text != original:
-                  html.write_text(text, encoding='utf-8')
-          PY
+          BASE_URL: /${{ github.event.repository.name }}
+        run: python -m myst build --html
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
