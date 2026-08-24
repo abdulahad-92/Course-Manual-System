@@ -3,6 +3,10 @@ title: Course Overview - Overview
 kernelspec: null
 ---
 
+```{code-cell} python3
+
+```
+
 MIS 103: Introduction to Computer Applications
 
 ## Instructor's Teaching Kit & Course Organizer
@@ -29,7 +33,5 @@ This digital manual serves as an instructor's private teaching workbench. Each m
 - **In-Page Execution**: Click the power icon in the top header to connect this 
 
 book to an interactive Jupyter kernel. All Python snippets become editable and runnable directly inside your browser.
-
-![](/images/Screenshot%20%28660%29.png)
 
 - **Google Colab & Offline Notebooks**: Every module includes a companion `.ipynb` file inside its `code/` folder that can be launched in Google Colab or run locally using JupyterLite/JupyterLab.
