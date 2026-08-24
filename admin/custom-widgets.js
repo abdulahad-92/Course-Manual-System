@@ -1,22 +1,29 @@
-// Register Custom Editor Components for MyST Markdown
+function renderHtml(html) {
+  if (typeof window.h !== 'undefined') {
+    return window.h('div', { dangerouslySetInnerHTML: { __html: html } });
+  } else if (typeof window.React !== 'undefined') {
+    return window.React.createElement('div', { dangerouslySetInnerHTML: { __html: html } });
+  }
+  return html;
+}
 
 // 1. Table of Contents
 CMS.registerEditorComponent({
   id: "myst-toc",
   label: "Table of Contents",
   fields: [],
-  pattern: /^{tableofcontents}$/m,
+  pattern: /^```\{tableofcontents\}\n```$/m,
   fromBlock: function(match) {
     return {};
   },
   toBlock: function(obj) {
-    return "{tableofcontents}";
+    return "```{tableofcontents}\n```";
   },
   toPreview: function(obj) {
-    return '<div style="padding: 20px; background: #2d3748; border: 1px solid #4a5568; text-align: center; border-radius: 8px; color: #e2e8f0; font-family: sans-serif; margin: 10px 0;">' +
+    return renderHtml('<div style="padding: 20px; background: #2d3748; border: 1px solid #4a5568; text-align: center; border-radius: 8px; color: #e2e8f0; font-family: sans-serif; margin: 10px 0;">' +
            '<strong style="font-size: 16px;">📚 Course Table of Contents</strong><br>' +
            '<em style="font-size: 12px; color: #a0aec0;">(Generated automatically upon publish)</em>' +
-           '</div>';
+           '</div>');
   }
 });
 
@@ -32,7 +39,7 @@ CMS.registerEditorComponent({
       default_language: "python"
     }
   ],
-  pattern: /^```{code-cell} python3\n([\s\S]*?)\n```$/m,
+  pattern: /^```\{code-cell\} python3\n([\s\S]*?)\n```$/m,
   fromBlock: function(match) {
     return {
       code: match[1]
@@ -42,10 +49,10 @@ CMS.registerEditorComponent({
     return "```{code-cell} python3\n" + (obj.code || "") + "\n```";
   },
   toPreview: function(obj) {
-    return '<div style="padding: 15px; background: #1e1e1e; color: #d4d4d4; border-radius: 8px; border-left: 4px solid #3776ab; margin: 10px 0;">' +
+    return renderHtml('<div style="padding: 15px; background: #1e1e1e; color: #d4d4d4; border-radius: 8px; border-left: 4px solid #3776ab; margin: 10px 0;">' +
            '<div style="font-family: sans-serif; font-size: 12px; font-weight: bold; margin-bottom: 8px; color: #3776ab;">PYTHON CODE CELL</div>' +
            '<pre style="margin: 0; font-family: monospace; white-space: pre-wrap; font-size: 14px;">' + (obj.code || "") + '</pre>' +
-           '</div>';
+           '</div>');
   }
 });
 
@@ -66,7 +73,7 @@ CMS.registerEditorComponent({
       widget: "markdown"
     }
   ],
-  pattern: /^:::{(note|warning|tip|important)}\n([\s\S]*?)\n:::$/m,
+  pattern: /^:::\{(note|warning|tip|important)\}\n([\s\S]*?)\n:::$/m,
   fromBlock: function(match) {
     return {
       type: match[1],
@@ -90,9 +97,9 @@ CMS.registerEditorComponent({
         color = "#276749"; bg = "#f0fff4"; border = "#68d391";
     }
     
-    return '<div style="padding: 15px; background: '+bg+'; color: '+color+'; border-left: 4px solid '+border+'; border-radius: 4px; margin: 10px 0; font-family: sans-serif;">' +
+    return renderHtml('<div style="padding: 15px; background: '+bg+'; color: '+color+'; border-left: 4px solid '+border+'; border-radius: 4px; margin: 10px 0; font-family: sans-serif;">' +
            '<strong style="text-transform: uppercase; font-size: 12px;">'+type+'</strong><br>' +
            '<div style="margin-top: 5px;">' + (obj.content || "") + '</div>' +
-           '</div>';
+           '</div>');
   }
 });
