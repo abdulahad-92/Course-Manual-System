@@ -24,7 +24,7 @@ This digital manual serves as an instructor's private teaching workbench. Each m
 
 ***
 
-### Executing Code Interactively
+### Executing Code Interactively.
 
 - **In-Page Execution**: Click the power icon in the top header to connect this book to an interactive Jupyter kernel. All Python snippets become editable and runnable directly inside your browser.
 - **Google Colab & Offline Notebooks**: Every module includes a companion `.ipynb` file inside its `code/` folder that can be launched in Google Colab or run locally using JupyterLite/JupyterLab.
@@ -35,5 +35,4 @@ This digital manual serves as an instructor's private teaching workbench. Each m
 
 ```javascript
 {tableofcontents}
-<h2>312312</h1>
 ```
