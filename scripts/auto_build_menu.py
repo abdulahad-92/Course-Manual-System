@@ -20,6 +20,7 @@ def generate_myst_config():
             "thebe_config": {
                 "kernel_name": "python3"
             },
+            "static_files": ["admin"],
             "toc": []
         },
         "site": {

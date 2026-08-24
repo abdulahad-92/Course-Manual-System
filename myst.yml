@@ -7,6 +7,8 @@ project:
   thebe: true
   thebe_config:
     kernel_name: python3
+  static_files:
+  - admin
   toc:
   - title: Course Overview
     file: content/00_Course_Overview/01_overview.md

@@ -1,0 +1,22 @@
+backend:
+  name: github
+  repo: abdulahad-92/Course-Manual-System
+  branch: main
+
+media_folder: "content/images"
+public_folder: "/images"
+
+# Disable logo/UI customizations for now
+# logo_url: https://your-logo-url
+
+collections:
+  - name: "course_content"
+    label: "Course Content"
+    folder: "content"
+    extension: "md"
+    create: true
+    nested:
+      depth: 3 # Enables folder tree view in CMS
+    fields:
+      - {label: "Kernelspec (Advanced/Optional)", name: "kernelspec", widget: "object", required: false, fields: [{label: "Name", name: "name", widget: "string", default: "python3", required: false}, {label: "Display Name", name: "display_name", widget: "string", default: "Python 3", required: false}]}
+      - {label: "Body", name: "body", widget: "markdown"}
