@@ -1,3 +1,6 @@
+---
+title: "Numpy Foundations - Resources"
+---
 # Module 9: Numerical Computation with NumPy: Resources & References
 
 > Syllabus weeks: 12–13 | CLO: CLO-3 | Reference: McKinney Ch 4

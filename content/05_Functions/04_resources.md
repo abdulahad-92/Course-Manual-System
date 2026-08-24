@@ -1,3 +1,6 @@
+---
+title: "Functions - Resources"
+---
 # Module 5: Modular Programming with Functions: Resources & References
 
 > Syllabus weeks: 7–8 | CLO: CLO-2 | Reference: Gaddis Ch 5 / McKinney Ch 3

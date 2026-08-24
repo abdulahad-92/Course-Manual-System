@@ -1,3 +1,6 @@
+---
+title: "Control Structures - Resources"
+---
 # Module 3: Resources & References
 
 > Weeks 3–4 | CLO-2

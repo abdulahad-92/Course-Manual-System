@@ -1,3 +1,6 @@
+---
+title: "Pandas Fundamentals - Lecture Notes"
+---
 # Module 7: Data Manipulation with Pandas
 ## Instructor Lecture Notes
 

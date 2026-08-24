@@ -1,3 +1,6 @@
+---
+title: "Intro To Python - Resources"
+---
 # Module 2: Resources & References
 
 > Week 2 | CLO-2

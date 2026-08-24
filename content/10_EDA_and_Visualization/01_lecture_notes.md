@@ -1,3 +1,6 @@
+---
+title: "Eda And Visualization - Lecture Notes"
+---
 # Module 10: Exploratory Data Analysis & Visualization
 ## Instructor Lecture Notes
 

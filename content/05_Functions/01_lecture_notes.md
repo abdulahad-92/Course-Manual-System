@@ -1,3 +1,6 @@
+---
+title: "Functions - Lecture Notes"
+---
 # Module 5: Modular Programming with Functions
 ## Instructor Lecture Notes
 

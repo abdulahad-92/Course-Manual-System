@@ -1,3 +1,6 @@
+---
+title: "Numpy Foundations - Lecture Notes"
+---
 # Module 9: Numerical Computation with NumPy
 ## Instructor Lecture Notes
 

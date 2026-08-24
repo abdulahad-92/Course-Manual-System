@@ -1,3 +1,6 @@
+---
+title: "Container Data Types - Lecture Notes"
+---
 # Module 4: Container Data Types
 ## Instructor Lecture Notes
 

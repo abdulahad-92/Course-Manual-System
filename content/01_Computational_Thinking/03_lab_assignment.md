@@ -1,3 +1,6 @@
+---
+title: "Computational Thinking - Lab Assignment"
+---
 # Module 1: Lab Assignment
 ## Algorithm Design & Basic Business Profiler
 

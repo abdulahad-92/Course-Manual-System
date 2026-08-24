@@ -1,3 +1,6 @@
+---
+title: "Data Quality - Lab Assignment"
+---
 # Module 8: Lab Assignment
 ## Labs #11 & #12 — Handling Data Quality Problems
 

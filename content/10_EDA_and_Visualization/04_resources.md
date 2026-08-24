@@ -1,3 +1,6 @@
+---
+title: "Eda And Visualization - Resources"
+---
 # Module 10: Exploratory Data Analysis & Visualization: Resources & References
 
 > Syllabus weeks: 13–14 | CLO: CLO-4 | Reference: McKinney Ch 9

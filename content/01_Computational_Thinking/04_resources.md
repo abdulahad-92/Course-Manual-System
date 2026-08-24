@@ -1,3 +1,6 @@
+---
+title: "Computational Thinking - Resources"
+---
 # Module 1: Resources & References
 ## Computational Thinking & Algorithmic Problem Solving
 

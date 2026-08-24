@@ -1,3 +1,6 @@
+---
+title: "Eda And Visualization - Lab Assignment"
+---
 # Module 10: Lab Assignment
 ## Lab #13 — EDA & Data Visualization using Matplotlib & Seaborn
 

@@ -1,3 +1,6 @@
+---
+title: "Data Quality - Resources"
+---
 # Module 8: Data Quality, Cleaning & Preparation: Resources & References
 
 > Syllabus weeks: 11–12 | CLO: CLO-3 | Reference: McKinney Ch 7

@@ -1,3 +1,6 @@
+---
+title: "Files And Exceptions - Lab Assignment"
+---
 # Module 6: Lab Assignment
 ## Lab #9 — Files and Exception Handling
 

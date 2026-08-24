@@ -1,3 +1,6 @@
+---
+title: "Pandas Fundamentals - Lab Assignment"
+---
 # Module 7: Lab Assignment
 ## Lab #10 (a & b) — Working with Pandas & DataFrames
 

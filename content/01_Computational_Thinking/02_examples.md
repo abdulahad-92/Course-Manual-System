@@ -1,4 +1,5 @@
 ---
+title: "Computational Thinking - Examples"
 kernelspec:
   name: python3
   display_name: Python 3

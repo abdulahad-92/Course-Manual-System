@@ -1,3 +1,6 @@
+---
+title: "Files And Exceptions - Lecture Notes"
+---
 # Module 6: Persistent Storage & Exception Handling
 ## Instructor Lecture Notes
 

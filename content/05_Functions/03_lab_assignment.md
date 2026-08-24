@@ -1,3 +1,6 @@
+---
+title: "Functions - Lab Assignment"
+---
 # Module 5: Lab Assignment
 ## Lab #8 — Functions
 

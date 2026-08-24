@@ -1,3 +1,6 @@
+---
+title: "Course Overview - Teaching Methodology"
+---
 # Teaching Methodology & Pedagogy
 
 > Private Instructor Guide for MIS 103

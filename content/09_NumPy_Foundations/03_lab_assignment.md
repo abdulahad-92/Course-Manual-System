@@ -1,3 +1,6 @@
+---
+title: "Numpy Foundations - Lab Assignment"
+---
 # Module 9: Lab Assignment
 ## Working with NumPy Arrays & Vectorization
 

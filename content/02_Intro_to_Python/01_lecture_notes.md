@@ -1,3 +1,6 @@
+---
+title: "Intro To Python - Lecture Notes"
+---
 # Module 2: Python Syntax, Variables & Input/Output
 ## Instructor Lecture Notes
 

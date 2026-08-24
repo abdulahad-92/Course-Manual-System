@@ -1,3 +1,6 @@
+---
+title: "Computational Thinking - Lecture Notes"
+---
 # Module 1: Computational Thinking & Algorithmic Problem Solving
 ## Instructor Lecture Notes
 

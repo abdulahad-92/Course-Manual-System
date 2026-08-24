@@ -1,3 +1,6 @@
+---
+title: "Control Structures - Lab Assignment"
+---
 # Module 3: Lab Assignments
 ## Labs #2 & #3 — Conditional Statements and Loops
 

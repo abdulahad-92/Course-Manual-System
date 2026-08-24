@@ -1,3 +1,6 @@
+---
+title: "Intro To Python - Lab Assignment"
+---
 # Module 2: Lab Assignment
 ## Lab #1 — Python Basics
 

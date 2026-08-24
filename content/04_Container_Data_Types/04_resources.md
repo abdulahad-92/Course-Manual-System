@@ -1,3 +1,6 @@
+---
+title: "Container Data Types - Resources"
+---
 # Module 4: Resources & References
 
 > Weeks 4–6 | CLO-2

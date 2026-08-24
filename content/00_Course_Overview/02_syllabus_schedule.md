@@ -1,3 +1,6 @@
+---
+title: "Course Overview - Syllabus Schedule"
+---
 # Syllabus & Semester Schedule
 
 > MIS 103: Introduction to Computer Applications | Instructor: Engr Dr Syed Irfan Nabi

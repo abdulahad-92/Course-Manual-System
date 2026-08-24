@@ -1,3 +1,6 @@
+---
+title: "Course Overview - Resources"
+---
 # Course-Wide Resources & References
 
 ## Primary Textbooks

@@ -1,3 +1,6 @@
+---
+title: "Files And Exceptions - Resources"
+---
 # Module 6: Persistent Storage & Exception Handling: Resources & References
 
 > Syllabus weeks: 9 | CLO: CLO-2 | Reference: Gaddis Ch 6 / McKinney Ch 6

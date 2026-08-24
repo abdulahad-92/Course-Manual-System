@@ -1,3 +1,6 @@
+---
+title: "Control Structures - Lecture Notes"
+---
 # Module 3: Control Structures (Conditionals & Loops)
 ## Instructor Lecture Notes
 

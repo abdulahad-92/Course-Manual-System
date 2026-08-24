@@ -1,3 +1,6 @@
+---
+title: "Pandas Fundamentals - Resources"
+---
 # Module 7: Data Manipulation with Pandas: Resources & References
 
 > Syllabus weeks: 10–11 | CLO: CLO-3 | Reference: McKinney Ch 5

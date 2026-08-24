@@ -1,3 +1,6 @@
+---
+title: "Course Overview - Overview"
+---
 # MIS 103: Introduction to Computer Applications
 ## Instructor's Teaching Kit & Course Organizer
 

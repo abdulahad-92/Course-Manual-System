@@ -1,3 +1,6 @@
+---
+title: "Data Quality - Lecture Notes"
+---
 # Module 8: Data Quality, Cleaning & Preparation
 ## Instructor Lecture Notes
 
