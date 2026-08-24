@@ -30,9 +30,3 @@ This digital manual serves as an instructor's private teaching workbench. Each m
 - **Google Colab & Offline Notebooks**: Every module includes a companion `.ipynb` file inside its `code/` folder that can be launched in Google Colab or run locally using JupyterLite/JupyterLab.
 
 ***
-
-### Course Outline
-
-```javascript
-{tableofcontents}
-```
