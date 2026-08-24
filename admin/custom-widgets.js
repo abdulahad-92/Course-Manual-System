@@ -52,12 +52,20 @@ function initCMSWidgets() {
       };
     },
     toBlock: function(obj) {
-      return "```{code-cell} python3\n" + (obj.code || "") + "\n```";
+      let codeStr = "";
+      if (obj.code) {
+        codeStr = typeof obj.code === 'string' ? obj.code : (obj.code.code || "");
+      }
+      return "```{code-cell} python3\n" + codeStr + "\n```";
     },
     toPreview: function(obj) {
+      let codeStr = "";
+      if (obj.code) {
+        codeStr = typeof obj.code === 'string' ? obj.code : (obj.code.code || "");
+      }
       return renderHtml('<div style="padding: 15px; background: #1e1e1e; color: #d4d4d4; border-radius: 8px; border-left: 4px solid #3776ab; margin: 10px 0;">' +
              '<div style="font-family: sans-serif; font-size: 12px; font-weight: bold; margin-bottom: 8px; color: #3776ab;">PYTHON CODE CELL</div>' +
-             '<pre style="margin: 0; font-family: monospace; white-space: pre-wrap; font-size: 14px;">' + (obj.code || "") + '</pre>' +
+             '<pre style="margin: 0; font-family: monospace; white-space: pre-wrap; font-size: 14px;">' + codeStr + '</pre>' +
              '</div>');
     }
   });
