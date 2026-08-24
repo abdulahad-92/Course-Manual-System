@@ -15,12 +15,12 @@ def generate_config():
   branch: main
 
 media_folder: "content/images"
-public_folder: "/images"
+public_folder: "/content/images"
 
 collections:
 """
     
-    folders = sorted([f for f in os.listdir(CONTENT_DIR) if os.path.isdir(os.path.join(CONTENT_DIR, f))])
+    folders = sorted([f for f in os.listdir(CONTENT_DIR) if os.path.isdir(os.path.join(CONTENT_DIR, f)) and f != "images"])
     
     for folder in folders:
         # e.g., 01_Computational_Thinking -> "Module 1 - Computational Thinking" or "Course Overview"
