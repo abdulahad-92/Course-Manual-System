@@ -6,17 +6,114 @@ backend:
 media_folder: "content/images"
 public_folder: "/images"
 
-# Disable logo/UI customizations for now
-# logo_url: https://your-logo-url
-
 collections:
-  - name: "course_content"
-    label: "Course Content"
-    folder: "content"
+
+  - name: "course_overview"
+    label: "Course Overview"
+    folder: "content/00_Course_Overview"
     extension: "md"
     create: true
-    nested:
-      depth: 3 # Enables folder tree view in CMS
     fields:
-      - {label: "Kernelspec (Advanced/Optional)", name: "kernelspec", widget: "object", required: false, fields: [{label: "Name", name: "name", widget: "string", default: "python3", required: false}, {label: "Display Name", name: "display_name", widget: "string", default: "Python 3", required: false}]}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Kernelspec (Optional)", name: "kernelspec", widget: "object", required: false, fields: [{label: "Name", name: "name", widget: "string", default: "python3", required: false}, {label: "Display Name", name: "display_name", widget: "string", default: "Python 3", required: false}]}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "module_1"
+    label: "Module 1: Computational Thinking"
+    folder: "content/01_Computational_Thinking"
+    extension: "md"
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Kernelspec (Optional)", name: "kernelspec", widget: "object", required: false, fields: [{label: "Name", name: "name", widget: "string", default: "python3", required: false}, {label: "Display Name", name: "display_name", widget: "string", default: "Python 3", required: false}]}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "module_2"
+    label: "Module 2: Intro To Python"
+    folder: "content/02_Intro_to_Python"
+    extension: "md"
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Kernelspec (Optional)", name: "kernelspec", widget: "object", required: false, fields: [{label: "Name", name: "name", widget: "string", default: "python3", required: false}, {label: "Display Name", name: "display_name", widget: "string", default: "Python 3", required: false}]}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "module_3"
+    label: "Module 3: Control Structures"
+    folder: "content/03_Control_Structures"
+    extension: "md"
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Kernelspec (Optional)", name: "kernelspec", widget: "object", required: false, fields: [{label: "Name", name: "name", widget: "string", default: "python3", required: false}, {label: "Display Name", name: "display_name", widget: "string", default: "Python 3", required: false}]}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "module_4"
+    label: "Module 4: Container Data Types"
+    folder: "content/04_Container_Data_Types"
+    extension: "md"
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Kernelspec (Optional)", name: "kernelspec", widget: "object", required: false, fields: [{label: "Name", name: "name", widget: "string", default: "python3", required: false}, {label: "Display Name", name: "display_name", widget: "string", default: "Python 3", required: false}]}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "module_5"
+    label: "Module 5: Functions"
+    folder: "content/05_Functions"
+    extension: "md"
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Kernelspec (Optional)", name: "kernelspec", widget: "object", required: false, fields: [{label: "Name", name: "name", widget: "string", default: "python3", required: false}, {label: "Display Name", name: "display_name", widget: "string", default: "Python 3", required: false}]}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "module_6"
+    label: "Module 6: Files And Exceptions"
+    folder: "content/06_Files_and_Exceptions"
+    extension: "md"
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Kernelspec (Optional)", name: "kernelspec", widget: "object", required: false, fields: [{label: "Name", name: "name", widget: "string", default: "python3", required: false}, {label: "Display Name", name: "display_name", widget: "string", default: "Python 3", required: false}]}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "module_7"
+    label: "Module 7: Pandas Fundamentals"
+    folder: "content/07_Pandas_Fundamentals"
+    extension: "md"
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Kernelspec (Optional)", name: "kernelspec", widget: "object", required: false, fields: [{label: "Name", name: "name", widget: "string", default: "python3", required: false}, {label: "Display Name", name: "display_name", widget: "string", default: "Python 3", required: false}]}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "module_8"
+    label: "Module 8: Data Quality"
+    folder: "content/08_Data_Quality"
+    extension: "md"
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Kernelspec (Optional)", name: "kernelspec", widget: "object", required: false, fields: [{label: "Name", name: "name", widget: "string", default: "python3", required: false}, {label: "Display Name", name: "display_name", widget: "string", default: "Python 3", required: false}]}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "module_9"
+    label: "Module 9: Numpy Foundations"
+    folder: "content/09_NumPy_Foundations"
+    extension: "md"
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Kernelspec (Optional)", name: "kernelspec", widget: "object", required: false, fields: [{label: "Name", name: "name", widget: "string", default: "python3", required: false}, {label: "Display Name", name: "display_name", widget: "string", default: "Python 3", required: false}]}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "module_10"
+    label: "Module 10: Eda And Visualization"
+    folder: "content/10_EDA_and_Visualization"
+    extension: "md"
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Kernelspec (Optional)", name: "kernelspec", widget: "object", required: false, fields: [{label: "Name", name: "name", widget: "string", default: "python3", required: false}, {label: "Display Name", name: "display_name", widget: "string", default: "Python 3", required: false}]}
       - {label: "Body", name: "body", widget: "markdown"}
