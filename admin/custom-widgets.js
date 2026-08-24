@@ -54,14 +54,26 @@ function initCMSWidgets() {
     toBlock: function(obj) {
       let codeStr = "";
       if (obj.code) {
-        codeStr = typeof obj.code === 'string' ? obj.code : (obj.code.code || "");
+        if (typeof obj.code === 'string') {
+          codeStr = obj.code;
+        } else if (typeof obj.code.get === 'function') {
+          codeStr = obj.code.get('code') || "";
+        } else {
+          codeStr = obj.code.code || "";
+        }
       }
       return "```{code-cell} python3\n" + codeStr + "\n```";
     },
     toPreview: function(obj) {
       let codeStr = "";
       if (obj.code) {
-        codeStr = typeof obj.code === 'string' ? obj.code : (obj.code.code || "");
+        if (typeof obj.code === 'string') {
+          codeStr = obj.code;
+        } else if (typeof obj.code.get === 'function') {
+          codeStr = obj.code.get('code') || "";
+        } else {
+          codeStr = obj.code.code || "";
+        }
       }
       return renderHtml('<div style="padding: 15px; background: #1e1e1e; color: #d4d4d4; border-radius: 8px; border-left: 4px solid #3776ab; margin: 10px 0;">' +
              '<div style="font-family: sans-serif; font-size: 12px; font-weight: bold; margin-bottom: 8px; color: #3776ab;">PYTHON CODE CELL</div>' +
