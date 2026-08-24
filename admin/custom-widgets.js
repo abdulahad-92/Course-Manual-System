@@ -12,7 +12,7 @@ CMS.registerEditorComponent({
   id: "myst-toc",
   label: "Table of Contents",
   fields: [],
-  pattern: /^```\{tableofcontents\}\n```$/m,
+  pattern: /^```\{tableofcontents\}\r?\n```$/m,
   fromBlock: function(match) {
     return {};
   },
@@ -39,7 +39,7 @@ CMS.registerEditorComponent({
       default_language: "python"
     }
   ],
-  pattern: /^```\{code-cell\} python3\n([\s\S]*?)\n```$/m,
+  pattern: /^```\{code-cell\} python3\r?\n([\s\S]*?)\r?\n```$/m,
   fromBlock: function(match) {
     return {
       code: match[1]
@@ -73,7 +73,7 @@ CMS.registerEditorComponent({
       widget: "markdown"
     }
   ],
-  pattern: /^:::\{(note|warning|tip|important)\}\n([\s\S]*?)\n:::$/m,
+  pattern: /^:::\{(note|warning|tip|important)\}\r?\n([\s\S]*?)\r?\n:::$/m,
   fromBlock: function(match) {
     return {
       type: match[1],
