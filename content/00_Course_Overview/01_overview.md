@@ -3,10 +3,6 @@ title: Course Overview - Overview
 kernelspec: null
 ---
 
-```{code-cell} python3
-
-```
-
 MIS 103: Introduction to Computer Applications
 
 ## Instructor's Teaching Kit & Course Organizer
@@ -24,7 +20,8 @@ This digital manual serves as an instructor's private teaching workbench. Each m
 1. **`01_lecture_notes.md`** — Core session objectives, pre-class preparation checklist, talking points, pedagogical notes, and common student pitfalls.
 2. **`02_examples.md`** — Runnable classroom demonstrations, before-and-after business code snippets, and interactive debugging exercises ("Spot the Bug").
 3. **`03_lab_assignment.md`** — Practical laboratory exercises assigned to students, including grading notes and a collapsible instructor solution key.
-4. **`04_resources.md`** — Direct textbook chapter mappings (Gaddis / McKinney), downloadable datasets, and links to interactive Jupyter notebooks.
+4. **`04_resources.md`** — Direct textbook chapter mappings (Gaddis / McKinney), downloadable datasets, and links to interactive Jupyter notebooks. 
+5. New Resources Edited
 
 ***
 
