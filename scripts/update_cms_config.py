@@ -15,7 +15,7 @@ def generate_config():
   branch: main
 
 media_folder: "content/images"
-public_folder: "/content/images"
+public_folder: "../images"
 
 collections:
 """
