@@ -16,7 +16,7 @@ Once logged in, you will see all your modules on the left. Click on any module (
 ## 3. Inserting Special Features
 Instead of typing complex Markdown tags by hand, you should use the **Insert ˅** dropdown menu in the editor toolbar.
 
-* **Images**: Click Insert -> Image. You can upload an image directly from your computer. It will automatically save to the correct `content/images/` folder.
+* **Images**: Click Insert -> Image. You can upload an image directly from your computer. It will automatically save to the correct `_static/images/` folder.
 * **Python Code Cells**: Click Insert -> Python Code Cell. Type your Python code into the box. This will render as an interactive, runnable Jupyter code cell on the live website.
 * **Alerts / Admonitions**: Click Insert -> Alert / Admonition. Choose the type (Note, Warning, Tip, Important) and type your message.
 

@@ -14,8 +14,8 @@ def generate_config():
   repo: abdulahad-92/Course-Manual-System
   branch: main
 
-media_folder: "content/images"
-public_folder: "../images"
+media_folder: "_static/images"
+public_folder: "/Course-Manual-System/_static/images"
 
 collections:
 """

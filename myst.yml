@@ -9,6 +9,7 @@ project:
     kernel_name: python3
   static_files:
   - admin
+  - _static
   toc:
   - title: Course Overview
     file: content/00_Course_Overview/01_overview.md
