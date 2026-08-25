@@ -3,7 +3,7 @@ title: Course Overview - Overview
 kernelspec: null
 ---
 
-![](/content/images/Screenshot%20(660).png)
+![](../images/Screenshot%20(660).png)
 
 MIS 103: Introduction to Computer Applications
 
