@@ -22,10 +22,6 @@ This digital manual serves as an instructor's private teaching workbench. Each m
 3. **`03_lab_assignment.md`** — Practical laboratory exercises assigned to students, including grading notes and a collapsible instructor solution key.
 4. **`04_resources.md`** — Direct textbook chapter mappings (Gaddis / McKinney), downloadable datasets, and links to interactive Jupyter notebooks. 
 
-```{code-cell} python3
-423 + 43212
-```
-
 ***
 
 ### Executing Code Interactively.
