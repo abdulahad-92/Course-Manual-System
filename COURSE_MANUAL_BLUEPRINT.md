@@ -143,3 +143,19 @@ To clone this exact architecture for a *new* course (e.g., "MIS 204: Data Scienc
 6. Run `python scripts/auto_build_menu.py` to update the Table of Contents.
 7. Run `python scripts/update_cms_config.py` to build the CMS config.
 8. Commit and Push to GitHub. The new course manual and CMS are instantly live!
+
+---
+
+## 🔐 Step 5: Giving Instructors Access
+
+Because Sveltia CMS commits changes directly to your GitHub repository, **any instructor who needs to edit the manual must be added as a Collaborator to the repository.**
+
+### How to add an instructor:
+1. Go to your GitHub repository in the browser.
+2. Click on **Settings** (the gear icon at the top).
+3. On the left sidebar, under **Access**, click **Collaborators**.
+4. Click the green **Add people** button.
+5. Enter the instructor's GitHub username or email address and add them to the repository.
+6. **Crucial:** The instructor will receive an email invitation from GitHub. They **must accept this invitation** before they can edit the site.
+
+Once they accept, they simply navigate to `https://<your-username>.github.io/<repo-name>/admin`, click "Login with GitHub," and they will have full edit access!
