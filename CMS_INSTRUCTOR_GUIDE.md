@@ -6,7 +6,14 @@ This guide explains how to use the online Content Management System (Sveltia CMS
 Go to your live website URL and append `/admin` to the end.
 *(For example: `https://abdulahad-92.github.io/Course-Manual-System/admin`)*
 
-You will log in using your GitHub account.
+You will log in using your GitHub account. Because this is a secure, serverless dashboard, you will be asked to provide a **Personal Access Token** (not your GitHub password).
+
+**How to get your Access Token:**
+1. Log into GitHub and go to **Settings** -> **Developer settings** -> **Personal access tokens** -> **Tokens (classic)**.
+2. Click **Generate new token (classic)**.
+3. Give it a name (e.g., "Course CMS"), set expiration to "No expiration", and **check the box next to `repo`** (Full control of private repositories).
+4. Click Generate and **copy the token** (it starts with `ghp_...`).
+5. Paste this token into the Sveltia CMS login screen.
 
 ## 2. Editing Content
 Once logged in, you will see all your modules on the left. Click on any module (e.g., `Module 1: Computational Thinking`) and select the file you want to edit (e.g., `01_lecture_notes`).

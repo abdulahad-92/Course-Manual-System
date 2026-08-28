@@ -158,4 +158,7 @@ Because Sveltia CMS commits changes directly to your GitHub repository, **any in
 5. Enter the instructor's GitHub username or email address and add them to the repository.
 6. **Crucial:** The instructor will receive an email invitation from GitHub. They **must accept this invitation** before they can edit the site.
 
-Once they accept, they simply navigate to `https://<your-username>.github.io/<repo-name>/admin`, click "Login with GitHub," and they will have full edit access!
+Once they accept, they need a **Personal Access Token** to log in to the dashboard:
+1. They log into GitHub and go to **Settings** -> **Developer settings** -> **Personal access tokens** -> **Tokens (classic)**.
+2. Click **Generate new token (classic)**, check the **`repo`** scope box, and generate the token (starts with `ghp_`).
+3. They navigate to `https://<your-username>.github.io/<repo-name>/admin`, click "Login with GitHub", and paste this token. They will then have full edit access!
